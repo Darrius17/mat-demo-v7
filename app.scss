@@ -1,0 +1,65 @@
+
+/* USAGE TAGS --- Must be declared first*/
+
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/checkbox"; // Required only for data table with row selection.
+@use "@material/data-table";
+@use "@material/textfield";
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+
+
+/* CSS RESET PREFIXTURES */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+{ margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } 
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* INCLUDES */
+@include textfield.core-styles;
+@include checkbox.core-styles;
+@include data-table.core-styles;
+@include icon-button.core-styles;
+
+
+
+// My theme variables
+
+// Color
+$mdc-theme-primary: #d81b60;
+$mdc-theme-on-primary: white;
+$mdc-theme-surface: #fce4ec;
+$mdc-theme-on-surface: black;
+
+
+
+// Shape
+$mdc-shape-small-component-radius: 20px;
+
+
+// Import Material Components
+@import "@material/textfield/mdc-text-field";
+@import "@material/button/mdc-button";
+
+
+
+/* BODY STYLES */
+.mdc-top-app-bar{
+	
+	 background-image: linear-gradient(#0079BF, #00A1FF);
+}
+
+
+
+
+                 
+
+               
+ 
+
+
+
+
