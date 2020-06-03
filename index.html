@@ -5,15 +5,19 @@
 
   <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="">
   <title>MDC Web Demo</title>
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="bundle.css">
-  <link rel="stylesheet" href="app.scss">
-  <link rel="stylesheet" href="materialize/css/materialize.min.css">
-  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="/bundle.css">
+  <link rel="stylesheet" href="/app2.scss">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:ital,wght@0,400;1,600;1,700&display=swap" 
+  rel="stylesheet">
+
   </head>
 
 <body>
@@ -28,31 +32,171 @@ ________________________________________________________________________________
 
 
 
-<header class="mdc-top-app-bar mdc-top-app-bar--prominent mdc-top-app-bar--fixed">
+ <header>
+      <ul id="sidenav-left" class="sidenav">
+       <!--  <li><a href="dashboard.html" class="logo-container">Admin<i class="material-icons left">spa</i></a></li> -->
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold waves-effect"><a class="collapsible-header">Pages<i class="material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="dashboard.html" class="waves-effect">Dashboard<i class="material-icons">web</i></a></li>
+                  <li><a href="pages-fixed-chart.html" class="waves-effect">Fixed Chart<i class="material-icons">list</i></a></li>
+                  <li><a href="pages-grid.html" class="waves-effect">Grid<i class="material-icons">dashboard</i></a></li>
+                  <li><a href="pages-chat.html" class="waves-effect">Chat<i class="material-icons">chat</i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold waves-effect"><a class="collapsible-header">Charts<i class="material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="line-charts.html" class="waves-effect">Line Charts<i class="material-icons">show_chart</i></a></li>
+                  <li><a href="bar-charts.html" class="waves-effect">Bar Charts<i class="material-icons">equalizer</i></a></li>
+                  <li><a href="area-charts.html" class="waves-effect">Area Charts<i class="material-icons">multiline_chart</i></a></li>
+                  <li><a href="doughnut-charts.html" class="waves-effect">Doughnut Charts<i class="material-icons">pie_chart</i></a></li>
+                  <li><a href="financial-charts.html" class="waves-effect">Financial Charts<i class="material-icons">euro_symbol</i></a></li>
+                  <li><a href="interactive-charts.html" class="waves-effect">Interactive Charts<i class="material-icons">touch_app</i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold waves-effect"><a class="collapsible-header">Tables<i class="material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="fullscreen-table.html" class="waves-effect">Fullscreen with Chart<i class="material-icons">show_chart</i></a></li>
+                  <li><a href="table-custom-elements.html" class="waves-effect">Table with Custom Elements<i class="material-icons">settings</i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold waves-effect"><a class="collapsible-header">Calendar<i class="material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="calendar.html" class="waves-effect">Calendar<i class="material-icons">cloud</i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold waves-effect"><a class="collapsible-header">Headers<i class="material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="header-tabbed.html" class="waves-effect">Tabbed<i class="material-icons">tab</i></a></li>
+                  <li><a href="header-metrics.html" class="waves-effect">Metrics<i class="material-icons">web</i></a></li>
+                  <li><a href="header-search.html" class="waves-effect">Search<i class="material-icons">search</i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold waves-effect active"><a class="collapsible-header">Account<i class="material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="log-in.html" class="waves-effect active">Log In<i class="material-icons">person</i></a></li>
+                  <li><a href="settings.html" class="waves-effect">Settings<i class="material-icons">settings</i></a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div id="dropdown1" class="dropdown-content notifications">
+        <div class="notifications-title">notifications</div>
+        <div class="card">
+          <div class="card-content"><span class="card-title">Joe Smith made a purchase</span>
+            <p>Content</p>
+          </div>
+          <div class="card-action"><a href="#!">view</a><a href="#!">dismiss</a></div>
+        </div>
+        <div class="card">
+          <div class="card-content"><span class="card-title">Daily Traffic Update</span>
+            <p>Content</p>
+          </div>
+          <div class="card-action"><a href="#!">view</a><a href="#!">dismiss</a></div>
+        </div>
+        <div class="card">
+          <div class="card-content"><span class="card-title">New User Joined</span>
+            <p>Content</p>
+          </div>
+          <div class="card-action"><a href="#!">view</a><a href="#!">dismiss</a></div>
+        </div>
+      </div>
+      <div id="chat-dropdown" class="dropdown-content dropdown-tabbed">
+        <ul class="tabs tabs-fixed-width">
+          <li class="tab col s3"><a href="#settings">Settings</a></li>
+          <li class="tab col s3"><a href="#friends" class="active">Friends</a></li>
+        </ul>
+        <div id="settings" class="col s12">
+          <div class="settings-group">
+            <div class="setting">Night Mode
+              <div class="switch right">
+                <label>
+                  <input type="checkbox"><span class="lever"></span>
+                </label>
+              </div>
+            </div>
+            <div class="setting">Beta Testing
+              <label class="right">
+                <input type="checkbox"><span></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div id="friends" class="col s12">
+          <ul class="collection flush">
+            <li class="collection-item avatar">
+              <div class="badged-circle online"><img src="" alt="avatar" class="circle"></div><span class="title">Jane Doe</span>
+              <p class="truncate">Lo-fi you probably haven't heard of them</p>
+            </li>
+            <li class="collection-item avatar">
+              <div class="badged-circle"><img src="" alt="avatar" class="circle"></div><span class="title">John Chang</span>
+              <p class="truncate">etsy leggings raclette kickstarter four dollar toast</p>
+            </li>
+            <li class="collection-item avatar">
+              <div class="badged-circle"><img src="" alt="avatar" class="circle"></div><span class="title">Lisa Simpson</span>
+              <p class="truncate">Raw denim fingerstache food truck chia health goth synth</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
 
 
-  <div class="mdc-top-app-bar__row">
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-      <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
-      <span class="mdc-top-app-bar__title">Test Page</span>
-      <span class="mdc-top-app-bar__title">Home</span>
-      <span class="mdc-top-app-bar__title">About</span>
-      <span class="mdc-top-app-bar__title">Contact</span>
-    </section>
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
-      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
-      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
-    </section>
-  </div>
-</header>
+
+
+
+    <nav class="navbar nav-extended no-padding">
+      <div class="nav-wrapper"><!-- <a href="#" data-target="sidenav-left" class="sidenav-trigger"><i class="material-icons">menu</i> --></a>
+
+
+        <ul id="nav-mobile" class="nav-mobile-test">
+          <li class="hide-on-med-and-down"><a href="">Home</a>
+          </li>
+
+
+          <li class="hide-on-med-and-down"><a href="">About Us</a></li>
+
+          <li class="hide-on-med-and-down"><a href="">Benefits</a></li>
+
+          <li class="hide-on-med-and-down"><a href="">How It Works</a></li>
+
+          <li class="hide-on-med-and-down"><a href="">Find Providers</a></li>
+
+          <li class="hide-on-med-and-down"><a href="">My Providers</a></li>
+
+          <li class="hide-on-med-and-down"><a href="">My Alerts</a></li>
 
 
 
 
 
-<div class="mdc-top-app-bar--prominent-fixed-adjust">
+
+          <li class="hide-on-med-and-down"><a href="#!" data-target="dropdown1" class="dropdown-trigger waves-effect"><i class="material-icons">notifications</i></a></li>
+          <li class="settings-target"><a href="#!" data-target="chat-dropdown" class="dropdown-trigger waves-effect"><i class="material-icons">settings</i></a></li>
+
+          <li class="hide-on-med-and-down"><a href="">Help</a></li>
+
+
+
+        </ul><a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons black-text">menu</i></a>
+      </div>
+      
+
 	
 
 <!------------------------------- _____________________________________________________________________________________________________________
@@ -73,26 +217,9 @@ ________________________________________________________________________________
  -->
 
 
-
-
-<!-- <div class="hero-drawer"><aside id="demo-drawer" class="mdc-drawer demo-drawer"><div class="mdc-drawer__header"><h3 class="mdc-drawer__title">Title</h3><h6 class="mdc-drawer__subtitle">subtext</h6></div><div class="mdc-drawer__content"><nav class="mdc-list"><a class="mdc-list-item mdc-list-item--activated" href="#" tabindex="-1" aria-selected="true"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox</a><a class="mdc-list-item" href="#" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star</a><a class="mdc-list-item" href="#" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>Sent Mail</a><a class="mdc-list-item" href="#" tabindex="-1"><i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>Drafts</a></nav></div></aside></div> -->
-
-
-
-
-
-
-
-
-
-
  <div class="container">
  <div class="row">
  <div class="col l12 s12">
-
-
-
-
 
 
 <div class="mdc-data-table">
@@ -393,6 +520,16 @@ ________________________________________________________________________________
 
 
 
+
+
+
+
+
+
+
+
+
+
 <!--_____________________________________________________________________________________________________________
    
   CONTENT END
@@ -403,30 +540,39 @@ ________________________________________________________________________________
 
 
  <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
+  <div class="container">
+    <div class="row">
+      <div class="col s6 m3">
+        <img class="sa-logo" src="/images/logo2.png" width="120px" alt="SkedgeAlert">
+        <p>&copy; Copyright 2020 by SkedgeAlert</p>
+      </div>
+      <div class="col s6 m3">
+        <h5>About</h5>
+        <ul>
+          <li><a href="#!">Blog</a></li>
+          <li><a href="#!">Pricing</a></li>
+          <li><a href="#!">Docs</a></li>
+        </ul>
+      </div>
+      <div class="col s6 m3">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="#!">Community</a></li>
+          <li><a href="#!">Subscribe</a></li>
+          <li><a href="#!">Email</a></li>
+        </ul>
+      </div>
+      <div class="col s6 m3">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#!">Twitter</a></li>
+          <li><a href="#!">Facebook</a></li>
+          <li><a href="#!">Github</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 
@@ -444,6 +590,5 @@ ________________________________________________________________________________
 
  
  <script src="bundle.js" async></script>
- <script src="materialize/js/materialize.js" async></script>
  
 </html>

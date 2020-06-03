@@ -1,0 +1,238 @@
+
+/* USAGE TAGS --- Must be declared first*/
+
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/checkbox"; // Required only for data table with row selection.
+@use "@material/data-table";
+@use "@material/textfield";
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+
+
+/* CSS RESET PREFIXTURES */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+{ margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } 
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* INCLUDES */
+@include textfield.core-styles;
+@include checkbox.core-styles;
+@include data-table.core-styles;
+@include icon-button.core-styles;
+
+
+
+// My theme variables
+
+// Color
+$mdc-theme-primary: #d81b60;
+$mdc-theme-on-primary: white;
+$mdc-theme-surface: #fce4ec;
+$mdc-theme-on-surface: black;
+
+
+
+// Shape
+$mdc-shape-small-component-radius: 20px;
+
+
+// Import Material Components
+@import "@material/textfield/mdc-text-field";
+@import "@material/button/mdc-button";
+
+
+
+/* BODY STYLES */
+.mdc-top-app-bar{
+	
+	 background-image: linear-gradient(#0079BF, #00A1FF);
+}
+
+
+
+
+
+
+.page-footer{
+	
+
+	background-image: linear-gradient(#0079BF, #00A1FF);
+}
+                 
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .btn{
+  background-color: #62A4FF;
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: #b3e5fc;
+} */
+
+  .nav-extended {
+  background-image: linear-gradient(#0079BF, #00A1FF);
+  }
+  h1, h2,{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  h3, h4, h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+
+  .tabs {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 48px;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    color: white;
+    background-color: transparent;
+}
+.tabs .tab a {
+    color: rgba(255,255,255,0.7);
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: color .28s ease, background-color .28s ease;
+}
+.tabs .tab a:hover, .tabs .tab a.active, .tabs .tab a.link{
+    background-color: transparent;
+    color: #fff;
+}
+
+  nav.navbar {
+    z-index: 10;
+    transition: box-shadow .3s, background-color .3s;
+    padding: 0 20px;
+    
+    color: white;
+}
+
+nav.navbar .brand-logo{
+    position: absolute;
+    left: 0%;
+    font-size: 18px;
+    font-family: Helvetica;
+    color:#00DEFE;
+}
+
+  nav .brand-logo {
+    position: absolute;
+    margin-left: 20px;
+  display: inline-block;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 18px;
+  color:#00DEFE;
+ }
+  .imginside{
+  width:120px;
+  max-height: 46px;
+  margin: 5p
+  
+  }
+  .unwrap{
+    margin-top:40px;
+    padding-left: 20px;
+    background-color: #1A3E4F;
+  }
+  .breadcrumb{
+    font-size: 10px;
+  }
+  .breadcrumb:before{
+    font-size: 12px;
+    vertical-align:middle;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  .page-footer{
+    background-image: linear-gradient(#0079BF, #00A1FF);
+    }
+  .footer-copyright{
+    background-color: #1A3E4F;
+  }
+  .page-footer ul li a, .page-footer p {
+    color: #000;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 300;
+    margin: 5px 0;
+}
+.tabs .tabs-transparent{
+  font-variant: normal;
+}
+.positioning{
+  margin:10px 0px 10px 10px;
+
+}
+  @media only screen and (max-width: 420px) {
+    nav .brand-logo {
+    position: absolute;
+    transform: none;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 16px;
+    color:#00DEFE;
+   }
+
+  }
+
+  @media only screen and (min-width: 421px){
+body:not(.has-fixed-sidenav) nav.navbar .brand-logo {
+    position: absolute;
+    left: 0%;
+    transform: none;
+}
+}
+
+.tabs-register{
+  float: right !important;
+}
+
+
+
+.page-footer .sa-logo {
+    margin-top: 2px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
