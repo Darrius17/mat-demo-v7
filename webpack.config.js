@@ -1,4 +1,7 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var path = require('path');
 const autoprefixer = require('autoprefixer');
+
 
 module.exports = {
   entry: ['./app2.scss', './app.js'],
